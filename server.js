@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/sng123'));
+app.use(express.static(__dirname + '/dist/Angular10JwtAuth'));
 app.get('/*', function(req,res) {
   res.sendFile(path.join(__dirname+
-    '/dist/index.html'));});
+    '/dist/Angular10JwtAuth/index.html'));});
 app.listen(process.env.PORT || 8080);
