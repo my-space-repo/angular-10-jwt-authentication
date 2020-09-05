@@ -2,6 +2,7 @@
   "name": "angular10-jwt-auth",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
@@ -9,8 +10,14 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~10.0.0",
+    "@angular/compiler-cli": "~10.0.0",
     "@angular/animations": "~10.0.0",
     "@angular/common": "~10.0.0",
     "@angular/compiler": "~10.0.0",
@@ -21,7 +28,8 @@
     "@angular/router": "~10.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "typescript": "~3.9.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.0",
